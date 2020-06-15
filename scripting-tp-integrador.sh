@@ -18,13 +18,15 @@ echo ""
 
 echo -n "Ingrese la cantidad de elementos a mostrar de la sucesion de Fibonacci: "
 read CANTIDAD_FIBO
-for  (( i=1; i<$CANTIDAD_FIBO; i++ ))
+for  (( i=1; i<=$CANTIDAD_FIBO; i++ ))
 do
 	if [ $i -eq 1 ]
 	then
 		NUM1=0
-		NUM2=1
 		echo 0
+    elif [ $i -eq 2 ]
+    then
+		NUM2=1
 		echo 1
 	else
 		N_FIBO=$NUM1+$NUM2
