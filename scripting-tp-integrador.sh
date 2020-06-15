@@ -24,8 +24,8 @@ do
 	then
 		NUM1=0
 		echo 0
-    elif [ $i -eq 2 ]
-    then
+	elif [ $i -eq 2 ]
+	then
 		NUM2=1
 		echo 1
 	else
